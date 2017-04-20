@@ -1,0 +1,44 @@
+/*STYLE.CSS VOERAL*/
+
+/*SVG FONDO*/
+svg{
+	position:fixed;
+}
+
+/*COLS*/
+.col-container{
+	position: absolute;
+	width:100%;
+	left:0;
+	right:0;
+	z-index: 111;
+	text-align: center;
+}
+.col-gen{
+	
+	width: 33%;
+	display: inline-block;
+	height: 1080px;
+	border: 1px solid black;
+	float: left;
+    opacity: 0.5;
+} 
+.col1{
+	background: url("../img/bg1.png");
+	background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: cover;
+}
+.col2{
+	background: url("../img/bg2.png");
+	background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: cover;
+
+}
+.col3{
+	background: url("../img/bg3.png");
+	background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: cover;
+}
