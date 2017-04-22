@@ -1,9 +1,7 @@
 /*STYLE.CSS VOERAL*/
 
 /*SVG FONDO*/
-svg{
-	position:fixed;
-}
+svg{position: fixed;}
 
 /*COLS*/
 .col-container{
@@ -23,11 +21,13 @@ svg{
 	float: left;
     opacity: 0.5;
 } 
-.col1{
+.col1-bg{
 	background: url("../img/bg1.png");
 	background-repeat: no-repeat;
     background-position-y: 100%;
     background-size: cover;
+	width: 100%;
+	height: 100%;
 }
 .col2{
 	background: url("../img/bg2.png");
@@ -41,4 +41,11 @@ svg{
 	background-repeat: no-repeat;
     background-position-y: 100%;
     background-size: cover;
+}
+
+/*COLS CONTENT*/
+.content-1{
+	background: #fff;
+	width: 100%;
+	height: 100%;
 }
