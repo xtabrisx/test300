@@ -34,8 +34,9 @@ $(document).ready(function($) {
     });
 
     $(".col1").click(function() {
-        $(this).toggleClass("active");
-        $(this).animateCss("flipInY");
+        $(".block-1").toggleClass("active");
+        //$(".block-1").animateCss("flipInY");
+        $(".block-1").toggleClass('flipInY').toggleClass('animated');;
     });
     $(".col2").click(function() {
         $(this).toggleClass("active");

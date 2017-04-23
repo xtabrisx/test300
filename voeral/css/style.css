@@ -73,7 +73,20 @@ svg {
 
 
 /*COLS CONTENT*/
+.block-1{
+	width:66.6%;
+	float:right;	
+    background: #fff;
+    right:0;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 1111;
 
+}
+.block-1.active{
+	opacity: 1;
+}
 .content-1 {
     background: #fff;
     width: 100%;
