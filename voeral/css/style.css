@@ -1,6 +1,49 @@
 /*STYLE.CSS VOERAL*/
 
-
+body{
+	overflow-x:hidden;
+}
+.burger-menu{
+	position: fixed;
+	top:0;
+	right: 0;
+	padding: 1rem;
+	margin:0.5rem;
+	width: 3rem;
+	z-index: 11111;
+}
+.burger-menu img{
+	width:100%;
+}
+.burger-menu .menu-img{
+	display: block;
+}
+.burger-menu .close-img{
+	display: none;
+}
+.burger-menu.active .menu-img{
+	display: none;
+}
+.burger-menu.active .close-img{
+	display: block;
+}
+.modal-menu{
+	position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 99%;
+    height: 100%;
+    margin: 0.5rem auto;
+	opacity: 0;
+	background: #000;
+	transition: opacity 1s;
+}
+.modal-menu.active{
+	opacity: 0.8;
+	
+	transition: opacity 1s;
+}
 /*SVG FONDO*/
 
 svg {
