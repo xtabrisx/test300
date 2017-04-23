@@ -1,5 +1,14 @@
 $(document).ready(function($) {
 
+    $.fn.extend({
+        animateCss: function(animationName) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            this.addClass('animated ' + animationName).one(animationEnd, function() {
+                $(this).removeClass('animated ' + animationName);
+            });
+        }
+    });
+
 
     var winHeight = $(window).height();
     console.log(winHeight);
@@ -22,6 +31,19 @@ $(document).ready(function($) {
                 }
             }
         });
+    });
+
+    $(".col1").click(function() {
+        $(this).toggleClass("active");
+        $(this).animateCss("flipInY");
+    });
+    $(".col2").click(function() {
+        $(this).toggleClass("active");
+        $(this).animateCss("flipInY");
+    });
+    $(".col3").click(function() {
+        $(this).toggleClass("active");
+        $(this).animateCss("flipInY");
     });
 
 });
