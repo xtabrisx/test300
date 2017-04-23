@@ -1,51 +1,95 @@
 /*STYLE.CSS VOERAL*/
 
+
 /*SVG FONDO*/
-svg{position: fixed;}
+
+svg {
+    position: fixed;
+    z-index: -11111;
+}
+
+
+/*MAIN SCREEN*/
+
+.main-logo {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+}
+
 
 /*COLS*/
-.col-container{
-	position: absolute;
-	width:100%;
-	left:0;
-	right:0;
-	z-index: 111;
-	text-align: center;
-}
-.col-gen{
-	
-	width: 33%;
-	display: inline-block;
-	height: 1080px;
-	border: 1px solid black;
-	float: left;
-    opacity: 0.5;
-} 
-.col1-bg{
-	background: url("../img/bg1.png");
-	background-repeat: no-repeat;
-    background-position-y: 100%;
-    background-size: cover;
-	width: 100%;
-	height: 100%;
-}
-.col2{
-	background: url("../img/bg2.png");
-	background-repeat: no-repeat;
-    background-position-y: 100%;
-    background-size: cover;
 
+.col-container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 111;
+    text-align: center;
 }
-.col3{
-	background: url("../img/bg3.png");
-	background-repeat: no-repeat;
+
+.col-gen {
+    width: 33.3%;
+    display: inline-block;
+    /* border: 1px solid black; */
+    float: left;
+    height: 100%;
+}
+
+.col1-bg {
+    background: url("../img/bg1.png");
+    background-repeat: no-repeat;
     background-position-y: 100%;
     background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0.5;
 }
+
+.col2-bg {
+    background: url("../img/bg2.png");
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0.5;
+}
+
+.col3-bg {
+    background: url("../img/bg3.png");
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0.5;
+}
+
 
 /*COLS CONTENT*/
-.content-1{
-	background: #fff;
-	width: 100%;
-	height: 100%;
+
+.content-1 {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.content-2 {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.content-3 {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
