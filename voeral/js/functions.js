@@ -1,4 +1,17 @@
 $(document).ready(function($) {
+	
+
+    $.MultiLanguage('language.json');
+	$(".btn-es").click(function(){
+		//alert("HOLA");
+		$.MultiLanguage('language.json', 'es');
+	});
+	$(".btn-en").click(function(){
+		$.MultiLanguage('language.json', 'en');
+	});
+	$(".btn-fr").click(function(){
+		$.MultiLanguage('language.json', 'fra');
+	});
 	/*EXTEND ANIMACIONES*/
     $.fn.extend({
         animateCss: function(animationName) {
@@ -41,7 +54,6 @@ $(document).ready(function($) {
     	$(this).animateCss("flipInY");
     	$(this).toggleClass('active');
     	$('.modal-menu').toggleClass('active');
-    	$('.modal-menu').toggleClass('flipInX');
     });
     /*COMPORTAMIENTO BLOQUE 1*/
     $(".col1").click(function() { 
@@ -49,21 +61,34 @@ $(document).ready(function($) {
     	$(".col3").animateCss('flipInY');
         //$(".block-1").animateCss("flipInY");
         $(".block-1").toggleClass('flipInY').toggleClass('animated');
-       
-
         $(".block-1").toggleClass("active");
-    });
-
-    /*COMPORTAMIENTO BLOQUE 2*/
-    $(".col2").click(function() {
-        $(this).toggleClass("active");
-        $(this).animateCss("flipInY");
     });
 
     /*COMPORTAMIENTO BLOQUE 3*/
     $(".col3").click(function() {
-        $(this).toggleClass("active");
-        $(this).animateCss("flipInY");
+        $(".col1").animateCss('flipInY');
+    	$(".col2").animateCss('flipInY');
+        //$(".block-1").animateCss("flipInY");
+        $(".block-3").toggleClass('flipInY').toggleClass('animated');  
+        $(".block-3").toggleClass("active");
+    });
+
+    /*COMPORTAMIENTO BLOQUE 2*/
+    $(".col2").click(function() { 
+    	$(".col1").animateCss('flipInY');
+    	$(".col1").toggleClass('active-alt');
+    	$(".col2").toggleClass('active-alt');
+    	if($(this).hasClass('active-alt')){
+    		$(this).animateCss('slideInRight');
+    	}else{
+    		$(this).animateCss('slideInLeft');
+    	}
+    	
+
+    	$(".col3").animateCss('flipInY');
+        //$(".block-1").animateCss("flipInY");
+        $(".block-2").toggleClass('flipInY').toggleClass('animated');
+        $(".block-2").toggleClass("active");
     });
 
 });

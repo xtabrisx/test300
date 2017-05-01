@@ -1,0 +1,22 @@
+{
+  "config": {
+    "default": "es"
+  },
+  "language": {
+    "es": {
+      ".ml-company": "compañía",
+      ".ml-news": "noticias",
+      ".ml-contact": "contacto"
+    },
+    "en": {
+      ".ml-company": "company",
+      ".ml-news": "news",
+      ".ml-contact": "contact"
+    },
+    "fra": {
+      ".ml-company": "company",
+      ".ml-news": "novetats",
+      ".ml-contact": "contacte"
+    }
+  }
+}

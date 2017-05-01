@@ -8,7 +8,7 @@ body{
 	top:0;
 	right: 0;
 	padding: 1rem;
-	margin:0.5rem;
+	margin:2rem;
 	width: 3rem;
 	z-index: 11111;
 }
@@ -32,16 +32,16 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    width: 99%;
-    height: 100%;
-    margin: 0.5rem auto;
+    width: 98%;
+    height: 95%;
+    margin: 1rem auto;
 	opacity: 0;
 	background: #000;
 	transition: opacity 1s;
 }
 .modal-menu.active{
 	opacity: 0.8;
-	
+	z-index: 1111;
 	transition: opacity 1s;
 }
 /*SVG FONDO*/
@@ -50,9 +50,34 @@ svg {
     position: fixed;
     z-index: -11111;
 }
-
-
+.language-menu{
+	position: fixed;
+	top:2rem;
+	right: 10rem;
+	z-index: 11111;
+}
+.btn-es, .btn-en, .btn-fr{
+	font-size: 1rem;
+	color: #fff;
+	display: inline-block;
+	padding: 0.5rem;
+	z-index: 11111;
+	cursor: pointer;
+}
+.menu-sections{
+	width: 100%;
+	padding-top: 20%;
+	text-align: center;
+}
+.menu-sections ul li{
+	font-size: 4rem;
+	color: #fff;
+	list-style: none;
+}
 /*MAIN SCREEN*/
+.main-screen{
+	z-index:1110;
+}
 
 .main-logo {
     position: absolute;
@@ -113,8 +138,12 @@ svg {
     position: absolute;
     opacity: 0.5;
 }
-
-
+.col1.active-alt{
+	float:right;
+}
+.col2.active-alt{
+	float:left;
+}
 /*COLS CONTENT*/
 .block-1{
 	width:66.6%;
@@ -124,36 +153,83 @@ svg {
     height: 100%;
     position: absolute;
     opacity: 0;
-    z-index: 1111;
-
 }
-.block-1.active{
-	opacity: 1;
-}
-.content-1 {
+.block-2{
+	width:66.6%;
+	float:right;	
     background: #fff;
-    width: 100%;
+    right:0;
     height: 100%;
     position: absolute;
     opacity: 0;
 }
-
-.content-2 {
+.block-2.active{
+	opacity: 1;
+    z-index: 1111;
+}
+.block-1.active{
+	opacity: 1;
+    z-index: 1111;
+}
+.block-3{
+	width:66.6%;
+	float:left;	
     background: #fff;
+    left:0;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+
+}
+.block-3.active{
+	opacity: 1;
+    z-index: 1111;
+}
+.content-1 {
+    background: transparent;
     width: 100%;
     height: 100%;
-    position: absolute;    
-    opacity: 0;
+    position: absolute;
+    opacity: 1;
+}
+
+.content-2 {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 1;
 }
 
 .content-3 {
-    background: #fff;
+    background: transparent;
     width: 100%;
     height: 100%;
-    position: absolute;    
-    opacity: 0;
+    position: absolute;
+    opacity: 1;
 }
-
+.col-title{
+	transform: rotate(-90deg);
+	color: #fff;
+	font-size: 5rem;
+	position: absolute;
+	bottom: 0;
+	transform-origin: left top 0;
+}
+.col-info-hover{
+	color:#fff;
+	position: absolute;
+	bottom:5rem;
+	right:0;
+	width:65%;
+	padding:2rem;
+	text-align:left;
+	transition: opacity 0.7s ease-in;
+	opacity: 0;
+}
+.col-gen:hover .col-info-hover{
+	opacity:1;
+}
 .active .content-1{
 	opacity: 1;
 }
