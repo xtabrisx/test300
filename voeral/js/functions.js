@@ -55,33 +55,59 @@ $(document).ready(function($) {
     	$(this).toggleClass('active');
     	$('.modal-menu').toggleClass('active');
     });
+
+    /*COMPORTAMIENTO ENLACES MODAL*/
+    $('.company-link').click(function() {
+	    block1();
+	    $('.modal-menu').removeClass('active');
+
+	});
+	$(".news-link").click(function() {		
+	    block2();
+	    $('.modal-menu').removeClass('active');
+
+	});
+	$(".contact-link").click(function() {
+	    block3();
+	    $('.modal-menu').removeClass('active');
+
+	});
+
     /*COMPORTAMIENTO BLOQUE 1*/
-    $(".col1").click(function() { 
+    function block1(){
     	$(".col2").animateCss('flipInY');
     	$(".col3").animateCss('flipInY');
         //$(".block-1").animateCss("flipInY");
         $(".block-1").toggleClass('flipInY').toggleClass('animated');
         $(".block-1").toggleClass("active");
+
+    }
+    $(".col1").click(function() { 
+    	block1();
     });
 
     /*COMPORTAMIENTO BLOQUE 3*/
-    $(".col3").click(function() {
+    function block3(){
         $(".col1").animateCss('flipInY');
     	$(".col2").animateCss('flipInY');
         //$(".block-1").animateCss("flipInY");
         $(".block-3").toggleClass('flipInY').toggleClass('animated');  
         $(".block-3").toggleClass("active");
+
+    }
+    $(".col3").click(function() {
+    	block3();
     });
 
     /*COMPORTAMIENTO BLOQUE 2*/
-    $(".col2").click(function() { 
+    function block2(){
     	$(".col1").animateCss('flipInY');
     	$(".col1").toggleClass('active-alt');
     	$(".col2").toggleClass('active-alt');
-    	if($(this).hasClass('active-alt')){
-    		$(this).animateCss('slideInRight');
+    	if($(".col2").hasClass('active-alt')){
+    		$(".col2").animateCss('slideInRight');
     	}else{
-    		$(this).animateCss('slideInLeft');
+    		$(".col2").animateCss('slideInLeft');
     	}
     	
 
@@ -89,6 +115,10 @@ $(document).ready(function($) {
         //$(".block-1").animateCss("flipInY");
         $(".block-2").toggleClass('flipInY').toggleClass('animated');
         $(".block-2").toggleClass("active");
+    }
+
+    $(".col2").click(function() { 
+    	block2();
     });
 
 });

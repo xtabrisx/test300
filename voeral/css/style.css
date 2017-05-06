@@ -1,5 +1,11 @@
 /*STYLE.CSS VOERAL*/
 
+
+/*FONTS*/
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
 body{
 	overflow-x:hidden;
 }
@@ -57,6 +63,7 @@ svg {
 	z-index: 11111;
 }
 .btn-es, .btn-en, .btn-fr{
+	font-family: 'Oswald', sans-serif;
 	font-size: 1rem;
 	color: #fff;
 	display: inline-block;
@@ -70,6 +77,8 @@ svg {
 	text-align: center;
 }
 .menu-sections ul li{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
 	font-size: 4rem;
 	color: #fff;
 	list-style: none;
@@ -209,6 +218,7 @@ svg {
     opacity: 1;
 }
 .col-title{
+	font-family: 'Source Sans Pro', sans-serif;
 	transform: rotate(-90deg);
 	color: #fff;
 	font-size: 5rem;
@@ -247,4 +257,41 @@ svg {
 }
 .active .col3-bg{
 	opacity: 0;
+}
+
+/*CONTENIDOS BLOQUES*/
+/*BLOQUE CONTACTO*/
+.voeral-logo{
+	text-align: left;
+	padding: 1rem 0 0 1rem;
+}
+.row-contact{
+	height: 30%;
+	width: 98%;
+	background: #ccc;
+	margin: 1%;
+	left: 0;
+	right: 0;
+}
+.col-contact-left{
+	width:50%;
+	display: inline-block;
+}
+.col-contact-right{
+	width:49%;
+	display: inline-block;
+}
+.country-header{
+	font-family: 'Oswald', sans-serif;
+	text-align: left;
+	padding-left: 0.3rem;
+	margin: 0.3rem 0 0 0;
+}
+.address-container{
+	border: 3px solid black;
+	text-align: left;
+	width: 80%;
+	padding: 1rem;
+	margin: 0.3rem;
+
 }
