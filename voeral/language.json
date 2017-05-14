@@ -1,6 +1,6 @@
 {
   "config": {
-    "default": "en"
+    "default": "es"
   },
   "language": {
     "es": {
@@ -22,8 +22,8 @@
     },
     "fra": {
       ".ml-company": "société",
-      ".ml-news": "novetats",
-      ".ml-contact": "contacte",
+      ".ml-news": "novedades fr",
+      ".ml-contact": "contacto fr",
       ".ml-info-hover-1": "VOERAL offre une assistance globale pour les développeurs de l’éolien. Spécialisée dans le domaine de la mesure du vent, nous proposons un développement permanent de produits pour donner une solution adaptée à chaque situation et à chaque moment. Expérience, spécialisation, connaissance profonde des énergies renouvelables et des équipements et en évolution permanente, ce sont les atouts qu’offre la société consolidée et reconnue dans le secteur. Depuis nos sièges en Europe, nous offrons nos services au monde entier, avec une présence particulière dans tout l’arc Méditerranéen.",
       ".ml-info-hover-2": "test novedades fra",
       ".ml-info-hover-3": "test contacto fra"

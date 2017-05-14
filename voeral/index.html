@@ -25,44 +25,45 @@
 
 <body style="margin:0;">
     <!--FONDO SVG AURORA BOREAL - HAY QUE SUBIRLO COMO PRIMER ELEMENTO DEL BODY-->
-    <svg style="background:#307553;" viewBox="0 0 100 100">
+    <svg style="background:#307553;" viewBox="0 0 90 90">
         <defs>
             <radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.264706%" fy="50%" r=".5">
-                <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate>
+                <animate attributeName="fx" dur="34s" values="0%;10%;0%" repeatCount="indefinite"></animate>
                 <stop offset="0%" stop-color="rgba(36, 112, 81, 1)"></stop>
                 <stop offset="100%" stop-color="rgba(36, 112, 81, 0)"></stop>
             </radialGradient>
             <radialGradient id="Gradient2" cx="50%" cy="50%" fx="1.14894%" fy="50%" r=".5">
                 <animate attributeName="fx" dur="40.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
-                <stop offset="0%" stop-color="rgba(60, 146, 153, 1)"></stop>
+                <stop offset="0%" stop-color="rgba(60, 146, 153, 0.2)"></stop>
                 <stop offset="100%" stop-color="rgba(60, 146, 153,  0)"></stop>
             </radialGradient>
             <radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.837209%" fy="50%" r=".5">
                 <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate>
-                <stop offset="0%" stop-color="rgba(45, 204, 186, 1)"></stop>
+                <stop offset="0%" stop-color="rgba(45, 204, 186, 0.2)"></stop>
                 <stop offset="100%" stop-color="rgba(45, 204, 186,  0)"></stop>
             </radialGradient>
             <radialGradient id="Gradient4" cx="50%" cy="50%" fx="4.13043%" fy="50%" r=".5">
                 <animate attributeName="fx" dur="23s" values="0%;5%;0%" repeatCount="indefinite"></animate>
-                <stop offset="0%" stop-color="rgba(55, 101, 148, 1)"></stop>
+                <stop offset="0%" stop-color="rgba(55, 101, 148, 0.2)"></stop>
                 <stop offset="100%" stop-color="rgba(55, 101, 148,  0)"></stop>
             </radialGradient>
             <radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.2449%" fy="50%" r=".5">
                 <animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate>
-                <stop offset="0%" stop-color="rgba(144,204,158, 1)"></stop>
+                <stop offset="0%" stop-color="rgba(144,204,158, 0.5)"></stop>
                 <stop offset="100%" stop-color="rgba(144,204,158,  0)"></stop>
             </radialGradient>
             <radialGradient id="Gradient6" cx="50%" cy="50%" fx="3.92157%" fy="50%" r=".5">
                 <animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate>
-                <stop offset="0%" stop-color="rgba(0,0,0, 1)"></stop>
-                <stop offset="100%" stop-color="rgba(0,0,0,  0)"></stop>
+                <stop offset="0%" stop-color="rgba(0,0,0, 0.2)"></stop>
+                <stop offset="100%" stop-color="rgba(0,0,0, 0)"></stop>
             </radialGradient>
             <radialGradient id="Gradient7" cx="50%" cy="50%" fx="3.92157%" fy="50%" r=".5">
                 <animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate>
-                <stop offset="0%" stop-color="rgba(223, 254, 44, 0.5)"></stop>
+                <stop offset="0%" stop-color="rgba(223, 254, 44, 0.2)"></stop>
                 <stop offset="100%" stop-color="rgba(223, 254, 44, 0)"></stop>
             </radialGradient>
         </defs>
+
         <rect x="23.75%" y="20.2381%" width="100%" height="50%" fill="url(#Gradient4)" transform="rotate(31.7647 50 50)">
             <animate attributeName="x" dur="20s" values="40%;0%;25%" repeatCount="indefinite"></animate>
             <animate attributeName="y" dur="21s" values="0%;50%;0%" repeatCount="indefinite"></animate>
@@ -73,7 +74,7 @@
             <animate attributeName="y" dur="24s" values="25%;-25%;25%" repeatCount="indefinite"></animate>
             <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"></animateTransform>
         </rect>
-        <rect x="-15%" y="-10.5769%" width="100%" height="50%" fill="url(#Gradient6)" transform="rotate(142.105 50 50)">
+        <rect x="-15%" y="-10.5769%" width="100%" height="50%" fill="url(#Gradient7)" transform="rotate(142.105 50 50)">
             <animate attributeName="x" dur="25s" values="-25%;0%;-25%" repeatCount="indefinite"></animate>
             <animate attributeName="y" dur="26s" values="0%;-25%;0%" repeatCount="indefinite"></animate>
             <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"></animateTransform>
@@ -93,11 +94,11 @@
             <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite"></animate>
             <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"></animateTransform>
         </rect>
-        <rect x="21%" y="10.5769%" width="100%" height="50%" fill="url(#Gradient7)" transform="rotate(142.105 50 50)">
+        <!--<rect x="21%" y="10.5769%" width="100%" height="50%" fill="url(#Gradient7)" transform="rotate(142.105 50 50)">
             <animate attributeName="x" dur="25s" values="0%;40%;0%" repeatCount="indefinite"></animate>
             <animate attributeName="y" dur="26s" values="0%;40%;0%" repeatCount="indefinite"></animate>
             <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"></animateTransform>
-        </rect>
+        </rect>-->
     </svg>
     <!--FIN FONDO SVG AURORA BOREAL-->
     <div class="burger-menu">
@@ -130,13 +131,54 @@
     <div id="col-section" class="col-container">
         <!--CONTENIDO BLOQUE 3-->
         <div class="block-3">
-          <div class="voeral-logo">VOERAL</div>
+          <div class="voeral-logo">
+            <img src="img/lg_black.png" alt="">
+          </div>
           <div class="row-contact">
             <div class="col-contact-left">
-              <h3 class="country-header ml-country-1">ESPAÑA</h3>
-              <div class="address-container ml-address-1"> bla bla bla<br>bla<br>bla</div>
+              <h1 class="country-header ml-country-1">ESPAÑA</h1>
+              <div class="address-container ml-address-1"> 
+              Lorem ipsum dolor sit amet
+              <br>Lorem ipsum dolor sit amet
+              <br>Lorem ipsum dolor sit amet
+              <br>Lorem ipsum dolor sit amet
+              <br>Lorem ipsum dolor sit amet
+
+              </div>
             </div>
-            <div class="col-contact-right"></div>
+            <div class="col-contact-right">
+                <img src="img/map.png" alt="">
+            </div>
+          </div>
+          <div class="row-contact">
+            <div class="col-contact-left">
+              <h1 class="country-header ml-country-1">FRANCIA</h1>
+              <div class="address-container ml-address-1"> 
+              Lorem ipsum dolor sit amet
+              <br>Lorem ipsum dolor sit amet
+              <br>Lorem ipsum dolor sit amet
+              <br>Lorem ipsum dolor sit amet
+              <br>Lorem ipsum dolor sit amet
+              </div>
+            </div>
+            <div class="col-contact-right">
+                <img src="img/map.png" alt="">
+            </div>
+          </div>
+          <div class="row-contact">
+            <div class="col-contact-left">
+              <h1 class="country-header ml-country-1">ITALIA</h1>
+              <div class="address-container ml-address-1"> 
+              Lorem ipsum dolor sit amet
+              <br>Lorem ipsum dolor sit amet
+              <br>Lorem ipsum dolor sit amet
+              <br>Lorem ipsum dolor sit amet
+              <br>Lorem ipsum dolor sit amet
+              </div>
+            </div>
+            <div class="col-contact-right">
+                <img src="img/map.png" alt="">
+            </div>
           </div>
          
 
@@ -149,7 +191,21 @@
               </div>
             </div>
         </div>
-        <div class="block-1"></div>
+        <div class="block-1">
+        <div class="main-welcome">
+          <div class="main-welcome-image">
+            <img src="img/5.png" alt="">
+          </div>
+          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+          <div class="main-welcome-text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </div>
+        </div>          
+
+        </div>
         <!--BLOQUE DEL CARRUSEL DE NOTICIAS - SLICK CAROUSEL-->
         <div class="block-2">
           <div class="news-carousel">

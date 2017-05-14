@@ -266,7 +266,6 @@ svg {
 .row-contact{
 	height: 30%;
 	width: 98%;
-	background: #ccc;
 	margin: 1%;
 	left: 0;
 	right: 0;
@@ -292,6 +291,11 @@ svg {
 	padding: 1rem;
 	margin: 0.3rem;
 }
+.col-contact-right img {
+    width: 80%;
+    vertical-align: middle;
+}
+/*BLOQUE NOTICIAS*/
 .news-carousel{
 	padding-top: 6rem;
 	height:100%;
@@ -316,4 +320,24 @@ svg {
 	width: 100%;
 	text-align: left;
 	height: 50%;
+}
+.main-welcome{
+	padding: 6rem 2rem 0rem 6rem;
+}
+.main-welcome-image{
+	width: 100%;
+	text-align: right;
+}
+.main-welcome-image img{
+	width: 100%;
+	display: inline-block;
+}
+.main-welcome h1{
+	text-align: right;
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: 1rem;
+}
+.main-welcome-text{
+	width: 100%;
+	text-align: right;
 }
