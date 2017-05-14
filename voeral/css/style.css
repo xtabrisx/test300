@@ -87,13 +87,11 @@ svg {
 .main-screen{
 	z-index:1110;
 }
-
 .main-logo {
     position: absolute;
-    top: 50%;
-    left: 48%;
+    top: 43%;
+    left: 41%;
 }
-
 
 /*COLS*/
 
@@ -293,5 +291,29 @@ svg {
 	width: 80%;
 	padding: 1rem;
 	margin: 0.3rem;
-
+}
+.news-carousel{
+	padding-top: 6rem;
+	height:100%;
+}
+.slick-list, .slick-track{
+	height:100%;	
+}
+.news-container{
+	height: 100%;
+	width: 100%;
+	padding: 2rem;
+}
+.news-image{
+	width: 100%;
+	text-align: center;
+	height: 50%;
+}
+.news-image img{
+	display: inline-block;
+}
+.news-text{
+	width: 100%;
+	text-align: left;
+	height: 50%;
 }

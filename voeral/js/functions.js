@@ -1,6 +1,16 @@
 $(document).ready(function($) {
 	
-    $('.news-carousel').slick({});
+    $slideshow = $('.news-carousel').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows:false
+    });
+
+    //CLICAR EN SLIDE PARA PASAR AL SIGUIENTE    
+    $('.news-container').click(function() {
+    $slideshow.slick('slickGoTo', parseInt($slideshow.slick('slickCurrentSlide'))+1);
+    });
+
     $.MultiLanguage('language.json');
 	$(".btn-es").click(function(){
 		//alert("HOLA");
