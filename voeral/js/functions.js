@@ -1,6 +1,6 @@
 $(document).ready(function($) {
 	
-
+    $('.news-carousel').slick({});
     $.MultiLanguage('language.json');
 	$(".btn-es").click(function(){
 		//alert("HOLA");
