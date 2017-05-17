@@ -23,6 +23,7 @@ body{
 }
 .burger-menu .menu-img{
 	display: block;
+	filter: drop-shadow(0.1rem 0.1rem 0.2rem #010);
 }
 .burger-menu .close-img{
 	display: none;
@@ -32,6 +33,7 @@ body{
 }
 .burger-menu.active .close-img{
 	display: block;
+	filter: drop-shadow(0.1rem 0.1rem 0.2rem #010);
 }
 .modal-menu{
 	position:fixed;
@@ -61,6 +63,7 @@ svg {
 	top:2rem;
 	right: 10rem;
 	z-index: 11111;
+	filter: drop-shadow(0.1rem 0.1rem 0.1rem #010);
 }
 .btn-es, .btn-en, .btn-fr{
 	font-family: 'Oswald', sans-serif;
@@ -91,6 +94,7 @@ svg {
     position: absolute;
     top: 43%;
     left: 41%;
+    cursor: url(../img/downw.png), auto;
 }
 
 /*COLS*/
@@ -234,6 +238,7 @@ svg {
 	text-align:left;
 	transition: opacity 0.7s ease-in;
 	opacity: 0;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 .col-gen:hover .col-info-hover{
 	opacity:1;
@@ -307,7 +312,24 @@ svg {
 	height: 100%;
 	width: 100%;
 	padding: 2rem;
+	border-right: 1px solid #bfbfbf;
 }
+.news-date{
+	width: 100%;
+	text-align: right;
+	font-family: 'Oswald', sans-serif;
+	padding-bottom: 0.5rem;
+}
+.news-title{
+
+text-align: left;
+}
+.news-title h2{
+	width: 100%;
+	margin: 0 0 0.5rem 0;
+	font-family: 'Oswald', sans-serif;
+}
+
 .news-image{
 	width: 100%;
 	text-align: center;
@@ -315,11 +337,20 @@ svg {
 }
 .news-image img{
 	display: inline-block;
+	width: 100%;
 }
 .news-text{
 	width: 100%;
 	text-align: left;
-	height: 50%;
+	max-height: 30%;
+	overflow-y:auto;
+}
+.news-signature{
+	width: 100%;
+	text-align: right;
+	font-family: 'Oswald', sans-serif;
+	font-size: 0.9rem;
+	margin-top:1rem;
 }
 .main-welcome{
 	padding: 6rem 2rem 0rem 6rem;
@@ -331,6 +362,7 @@ svg {
 .main-welcome-image img{
 	width: 100%;
 	display: inline-block;
+	margin-top: 1rem;
 }
 .main-welcome h1{
 	text-align: right;
@@ -340,4 +372,21 @@ svg {
 .main-welcome-text{
 	width: 100%;
 	text-align: right;
+}
+
+/*CURSORES*/
+.rightb {
+  cursor: url(../img/rightb.png), auto;
+}
+.plusw{
+  cursor: url(../img/plusw.png), auto;
+}
+.plusw.active-alt{
+  cursor: url(../img/minusw.png), auto;
+}
+.plusw.minus{
+  cursor: url(../img/minusw.png), auto;
+}
+.invert .language-menu{	
+    filter: invert(100%);
 }
