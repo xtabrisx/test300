@@ -17,6 +17,7 @@ body{
 	margin:2rem;
 	width: 3rem;
 	z-index: 11111;
+	cursor: pointer;
 }
 .burger-menu img{
 	width:100%;
