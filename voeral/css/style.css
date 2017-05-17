@@ -85,6 +85,10 @@ svg {
 	font-size: 4rem;
 	color: #fff;
 	list-style: none;
+	cursor: pointer;
+}
+.menu-sections ul li:hover{
+	text-decoration: underline;
 }
 /*MAIN SCREEN*/
 .main-screen{
