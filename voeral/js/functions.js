@@ -3,7 +3,7 @@ $(document).ready(function($) {
     $slideshow = $('.news-carousel').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
-        arrows:false
+        arrows:true
     });
     //CLICAR EN SLIDE PARA PASAR AL SIGUIENTE    
     $('.news-container').click(function() {
@@ -36,6 +36,10 @@ $(document).ready(function($) {
     $(".main-screen").height(winHeight);
     $(".col-container").height(winHeight);
 
+    //DISPARAR EVENTO SCROLLDOWN EN TODA LA PANTALLA
+    $(".main-screen").click(function(){
+        $("#anchor-scroll").click();
+    });
     /*LAZYLOAD*/
     $("img").unveil();
     //alert("test");
@@ -69,12 +73,11 @@ $(document).ready(function($) {
 
             $('.burger-menu').animateCss("flipInY");
             $('.burger-menu').toggleClass('active');
-            $('.modal-menu').toggleClass('active');
-            
+            $('.modal-menu').toggleClass('active');            
     }
+
     /*COMPORTAMIENTO BURGER*/
     $('.burger-menu').click(function(){burgerFunc();});
-
 
     /*COMPORTAMIENTO ENLACES MODAL*/
     $('.company-link').click(function() {

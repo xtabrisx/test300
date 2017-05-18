@@ -9,6 +9,9 @@ font-family: 'Source Sans Pro', sans-serif;
 body{
 	overflow-x:hidden;
 }
+button:focus{
+    outline: none;
+}
 .burger-menu{
 	position: fixed;
 	top:0;
@@ -47,6 +50,7 @@ body{
 	opacity: 0;
 	background: #000;
 	transition: opacity 1s;
+	z-index: -1;
 }
 .modal-menu.active{
 	opacity: 0.8;
@@ -94,12 +98,12 @@ svg {
 /*MAIN SCREEN*/
 .main-screen{
 	z-index:1110;
+    cursor: url(../img/downw.png), auto;
 }
 .main-logo {
     position: absolute;
     top: 43%;
     left: 41%;
-    cursor: url(../img/downw.png), auto;
 }
 
 /*COLS*/
@@ -377,11 +381,16 @@ text-align: left;
 .main-welcome-text{
 	width: 100%;
 	text-align: right;
+	max-height: 170px;
+    overflow-y: auto;
 }
 
 /*CURSORES*/
 .rightb {
   cursor: url(../img/rightb.png), auto;
+}
+.leftb {
+  cursor: url(../img/leftb.png), auto;
 }
 .plusw{
   cursor: url(../img/plusw.png), auto;
@@ -394,4 +403,30 @@ text-align: left;
 }
 .invert .language-menu{	
     filter: invert(100%);
+}
+
+/*CAROUSEL*/
+button.slick-prev.slick-arrow {
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: transparent;
+    z-index: 111;
+    width: 50%;
+    cursor: url(../img/leftb.png), auto;
+}
+button.slick-next.slick-arrow {
+    position: absolute;
+    right: 0;
+    top:0;
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: transparent;
+    z-index: 111;
+    width: 50%;
+    cursor: url(../img/rightb.png), auto;
 }
