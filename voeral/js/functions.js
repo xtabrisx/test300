@@ -5,10 +5,10 @@ $(document).ready(function($) {
         slidesToScroll: 1,
         arrows:true
     });
-    //CLICAR EN SLIDE PARA PASAR AL SIGUIENTE    
-    $('.news-container').click(function() {
+    //CLICAR EN SLIDE PARA PASAR AL SIGUIENTE - DEPRECATED
+    /*$('.news-container').click(function() {
     $slideshow.slick('slickGoTo', parseInt($slideshow.slick('slickCurrentSlide'))+1);
-    });
+    });*/
     //CAMBIO DE IDIOMA
     $.MultiLanguage('language.json');
 	$(".btn-es").click(function(){

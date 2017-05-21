@@ -386,9 +386,9 @@ text-align: left;
 }
 
 /*CURSORES*/
-.rightb {
+/*.rightb {
   cursor: url(../img/rightb.png), auto;
-}
+}*/
 .leftb {
   cursor: url(../img/leftb.png), auto;
 }
@@ -410,7 +410,7 @@ button.slick-prev.slick-arrow {
     position: absolute;
     left: 0;
     top:0;
-    height: 100%;
+    height: 60%;
     border: none;
     background: transparent;
     color: transparent;
@@ -422,7 +422,7 @@ button.slick-next.slick-arrow {
     position: absolute;
     right: 0;
     top:0;
-    height: 100%;
+    height: 60%;
     border: none;
     background: transparent;
     color: transparent;
