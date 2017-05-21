@@ -287,10 +287,12 @@ svg {
 .col-contact-left{
 	width:50%;
 	display: inline-block;
+	vertical-align: middle;
 }
 .col-contact-right{
 	width:49%;
 	display: inline-block;
+    vertical-align: top;
 }
 .country-header{
 	font-family: 'Oswald', sans-serif;
@@ -304,9 +306,12 @@ svg {
 	width: 80%;
 	padding: 1rem;
 	margin: 0.3rem;
+	position: relative;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 1.4rem;
 }
 .col-contact-right img {
-    width: 80%;
+    width: 72%;
     vertical-align: middle;
 }
 /*BLOQUE NOTICIAS*/
@@ -429,4 +434,13 @@ button.slick-next.slick-arrow {
     z-index: 111;
     width: 50%;
     cursor: url(../img/rightb.png), auto;
+}
+.decor-lang{
+	font-family: 'Oswald', sans-serif;
+	transform: rotate(-90deg);
+	position: absolute;
+	bottom: 0.3rem;
+	right: 0.3rem;
+	opacity: 0.2;
+	margin: 0;
 }
