@@ -386,8 +386,8 @@ text-align: left;
 .main-welcome-text{
 	width: 100%;
 	text-align: right;
-	max-height: 170px;
-    overflow-y: auto;
+	/*max-height: 170px;
+    overflow-y: auto;*/
 }
 
 /*CURSORES*/
@@ -443,4 +443,10 @@ button.slick-next.slick-arrow {
 	right: 0.3rem;
 	opacity: 0.2;
 	margin: 0;
+}
+.main-welcome-inner {
+    max-height: 720px;
+    overflow-y: auto;
+    padding: 1rem;
+    margin-top: 1rem;
 }
