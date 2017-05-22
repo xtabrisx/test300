@@ -59,6 +59,10 @@ $(document).ready(function($) {
             }
         });
     });
+    //SCROLLTOP
+    $('.go-top').click(function(){
+        $('html, body').animate({scrollTop:0}, 'slow');
+    });
     var controlBloque = 0;
     function burgerFunc(){
             if($(".block-1").hasClass('active')){
