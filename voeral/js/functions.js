@@ -1,4 +1,12 @@
 $(document).ready(function($) {
+    //VARIABLES
+    var bloqueUno = $(".block-1");
+    var bloqueDos = $(".block-2");
+    var bloqueTres = $(".block-3");
+    var colUno = $(".col1");
+    var colDos = $(".col2");
+    var colTres = $(".col3");
+
     //CREACIÓN DEL CAROUSEL
     $slideshow = $('.news-carousel').slick({
         slidesToShow: 2,
@@ -79,7 +87,15 @@ $(document).ready(function($) {
             $('.burger-menu').toggleClass('active');
             $('.modal-menu').toggleClass('active');            
     }
+    //SCROLL BOTTOM
+    $(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+           $("#voeral-logo").show().animateCss("fadeIn");
+       }else{
+            $("#voeral-logo").fadeOut();
+       }
 
+    });
     /*COMPORTAMIENTO BURGER*/
     $('.burger-menu').click(function(){burgerFunc();});
 
@@ -108,50 +124,72 @@ $(document).ready(function($) {
 
     /*COMPORTAMIENTO BLOQUE 1*/
     function block1(){
-        $(".col1").toggleClass('minus');
-    	$(".col2").animateCss('flipInY');
-    	$(".col3").animateCss('flipInY');
-        //$(".block-1").animateCss("flipInY");
-        $(".block-1").toggleClass('flipInY').toggleClass('animated');
-        $(".block-1").toggleClass("active");
-
+        if(bloqueUno.hasClass('active')){
+            colDos.animateCss('fadeIn');
+            colTres.animateCss('fadeIn');
+            bloqueUno.animateCss('fadeOutRight');
+        }else{
+            colDos.animateCss('fadeOut');
+            colTres.animateCss('fadeOut');
+            bloqueUno.animateCss('fadeInRight');
+        }
+        colUno.toggleClass('minus');    	
+        bloqueUno.toggleClass("active");
     }
-    $(".col1").click(function() { 
+    colUno.click(function() { 
     	block1();
     });
 
     /*COMPORTAMIENTO BLOQUE 3*/
-    function block3(){
-        $(".col3").toggleClass('minus');
-        $(".col1").animateCss('flipInY');
-    	$(".col2").animateCss('flipInY');
-        //$(".block-1").animateCss("flipInY");
-        $(".block-3").toggleClass('flipInY').toggleClass('animated');  
-        $(".block-3").toggleClass("active");
-
+    function block3(){     
+        //$(".block-3").toggleClass('flipInY').toggleClass('animated');  
+        if(bloqueTres.hasClass('active')){
+            colUno.animateCss('fadeIn');
+            colDos.animateCss('fadeIn');
+            bloqueTres.animateCss('fadeOutLeft');
+        }else{
+            colUno.animateCss('fadeOut');
+            colDos.animateCss('fadeOut');
+            bloqueTres.animateCss('fadeInLeft');
+        }
+        colTres.toggleClass('minus');
+        bloqueTres.toggleClass("active");
     }
-    $(".col3").click(function() {
+    colTres.click(function() {
     	block3();
     });
 
     /*COMPORTAMIENTO BLOQUE 2*/
     function block2(){
-    	$(".col1").animateCss('flipInY');
-    	$(".col1").toggleClass('active-alt');
-    	$(".col2").toggleClass('active-alt');
-    	if($(".col2").hasClass('active-alt')){
-    		$(".col2").animateCss('slideInRight');
+        if(bloqueDos.hasClass('active')){
+            //colUno.animateCss('fadeIn');
+            colTres.animateCss('fadeIn');
+            bloqueDos.animateCss('fadeOutRight');
+        }else{
+            //colUno.animateCss('bounce');
+            colTres.animateCss('fadeOut');
+            bloqueDos.animateCss('fadeInRight');
+        }    	
+    	
+    	if(colDos.hasClass('active-alt')){
+    		colUno.show();
+            colUno.animateCss('slideInLeft');
+            colDos.animateCss('slideInLeft');
     	}else{
-    		$(".col2").animateCss('slideInLeft');
-    	}    	
-
-    	$(".col3").animateCss('flipInY');
-        //$(".block-1").animateCss("flipInY");
-        $(".block-2").toggleClass('flipInY').toggleClass('animated');
-        $(".block-2").toggleClass("active");
+    		colUno.animateCss('slideOutLeft');
+            colDos.animateCss('slideOutLeft');
+            colUno.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+                function(){
+                    colUno.hide();
+                });
+    	}    	    	
+        //bloqueDos.toggleClass('flipInY').toggleClass('animated');
+        colUno.toggleClass('active-alt');
+        colDos.toggleClass('active-alt');
+        bloqueDos.toggleClass("active");
     }
 
-    $(".col2").click(function() { 
+    colDos.click(function() { 
     	block2();
     });
 

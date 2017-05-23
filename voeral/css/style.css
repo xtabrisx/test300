@@ -17,7 +17,7 @@ button:focus{
 	top:0;
 	right: 0;
 	padding: 1rem;
-	margin:2rem;
+	margin: 1rem;
 	width: 3rem;
 	z-index: 11111;
 	cursor: pointer;
@@ -27,7 +27,7 @@ button:focus{
 }
 .burger-menu .menu-img{
 	display: block;
-	filter: drop-shadow(0.1rem 0.1rem 0.2rem #010);
+	filter: grayscale(100%);
 }
 .burger-menu .close-img{
 	display: none;
@@ -65,15 +65,14 @@ svg {
 }
 .language-menu{
 	position: fixed;
-	top:2rem;
+	top: 0.5rem;
 	right: 10rem;
 	z-index: 11111;
-	filter: drop-shadow(0.1rem 0.1rem 0.1rem #010);
 }
-.btn-es, .btn-en, .btn-fr{
-	font-family: 'Oswald', sans-serif;
+.btn-es, .btn-en, .btn-fr{	
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1rem;
-	color: #fff;
+	color: #000;
 	display: inline-block;
 	padding: 0.5rem;
 	z-index: 11111;
@@ -91,9 +90,13 @@ svg {
 	color: #fff;
 	list-style: none;
 	cursor: pointer;
+	width: 320px;
+	margin: auto;
+	border-bottom: 1px solid transparent;
 }
 .menu-sections ul li:hover{
-	text-decoration: underline;
+	text-decoration: none;
+	border-bottom: 1px solid;
 }
 /*MAIN SCREEN*/
 .main-screen{
@@ -103,9 +106,21 @@ svg {
 .main-logo {
     position: absolute;
     top: 43%;
-    left: 41%;
+    left: 0;
+    right: 0;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    width: 100%;
+    text-align: center;
 }
-
+.scroll-ico{
+	position: absolute;
+	top: 65%;
+	/* left: 41%; */
+	width: 100%;
+	text-align: -webkit-center;
+	margin-top: 5rem;
+}
 /*COLS*/
 
 .col-container {
@@ -159,7 +174,8 @@ svg {
     opacity: 0.5;
 }
 .col1.active-alt{
-	float:right;
+	
+
 }
 .col2.active-alt{
 	float:left;
@@ -276,6 +292,9 @@ svg {
 .voeral-logo{
 	text-align: left;
 	padding: 1rem 0 0 1rem;
+	position: absolute;
+	z-index: 11111;
+	margin: 1.6rem;
 }
 .row-contact{
 	height: 30%;
@@ -285,27 +304,29 @@ svg {
 	right: 0;
 }
 .col-contact-left{
-	width:50%;
+	width: 42%;
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: bottom;
+	padding-bottom: 0.2rem;
 }
 .col-contact-right{
-	width:49%;
+	width: 53%;
 	display: inline-block;
-    vertical-align: top;
+	vertical-align: top;
 }
 .country-header{
 	font-family: 'Oswald', sans-serif;
-	text-align: left;
+	text-align: right;
 	padding-left: 0.3rem;
 	margin: 0.3rem 0 0 0;
+	padding-right: 0.4rem;
 }
 .address-container{
 	border: 3px solid black;
 	text-align: left;
-	width: 80%;
+	/* width: 80%; */
 	padding: 1rem;
-	margin: 0.3rem;
+	/* margin: 0.3rem; */
 	position: relative;
 	font-family: 'Source Sans Pro', sans-serif;
 	line-height: 1.4rem;
@@ -344,15 +365,24 @@ svg {
 	font-family: 'Oswald', sans-serif;
 }
 
+/*CSS CROP IMAGES*/
 .news-image{
-	width: 100%;
-	text-align: center;
-	height: 50%;
+  position: relative;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
 }
 .news-image img{
-	display: inline-block;
-	width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }
+
 .news-text{
 	width: 100%;
 	text-align: left;
@@ -387,6 +417,7 @@ svg {
 .main-welcome-text{
 	width: 100%;
 	text-align: right;
+	font-family: 'Source Sans Pro', sans-serif;
 	/*max-height: 170px;
     overflow-y: auto;*/
 }
@@ -455,14 +486,14 @@ button.slick-next.slick-arrow {
 	transition: all 0.6s ease;
     position: absolute;
     top: 0;
-    height: 5rem;
+    height:8rem;
     width: 100%;
     z-index: 11111;
-    cursor: url(../img/topw.png), auto;
+    cursor: url(../img/topw.png) 40 40, auto;
 }
 .go-top:hover{
 	transition: all 0.6s ease;
-	-webkit-box-shadow: inset 0px 45px 33px -22px rgba(0,0,0,0.43);
-	-moz-box-shadow: inset 0px 45px 33px -22px rgba(0,0,0,0.43);
-	box-shadow: inset 0px 45px 33px -22px rgba(0,0,0,0.43);
+	-webkit-box-shadow: inset 0px 120px 50px -40px rgba(0,0,0,0.18);
+	-moz-box-shadow: inset 0px 120px 50px -40px rgba(0,0,0,0.18);
+	box-shadow: inset 0px 120px 50px -40px rgba(0,0,0,0.18);
 }
