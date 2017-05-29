@@ -21,6 +21,8 @@
     <script src="lib/jquery.unveil.js"></script>
     <script type="text/javascript" src="lib/slick.min.js"></script>
     <script type="text/javascript" src="lib/jquery.MultiLanguage.min.js"></script>
+    <!--AIzaSyDgSsYRG_NKy6hMei4QjkY0tsSgxQPBs-w-->
+
 </head>
 
 <body style="margin:0;">
@@ -115,9 +117,9 @@
     <div class="modal-menu">
       <div class="menu-sections">
         <ul>
-          <li class="company-link ml-company">test 1</li>
-          <li class="news-link ml-news">test 2</li>
-          <li class="contact-link ml-contact">test 3</li>
+          <li><span class="company-link ml-company">test 1</span></li>
+          <li><span class="news-link ml-news">test 2</span></li>
+          <li><span class="contact-link ml-contact">test 3</span></li>
         </ul>
       </div>
     </div>
@@ -151,7 +153,7 @@
               </div>
             </div>
             <div class="col-contact-right">
-                <img src="img/map.png" alt="">
+                <div id="map1"></div>
             </div>
           </div>
           <div class="row-contact">
@@ -168,7 +170,7 @@
               </div>
             </div>
             <div class="col-contact-right">
-                <img src="img/map.png" alt="">
+                <div id="map2"></div>
             </div>
           </div>
           <div class="row-contact">
@@ -184,7 +186,7 @@
               </div>
             </div>
             <div class="col-contact-right">
-                <img src="img/map.png" alt="">
+                <div id="map3"></div>
             </div>
           </div>
          
@@ -292,5 +294,48 @@
     </div>
 </body>
 <script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript" charset="utf-8">
+  function initMap() {
+      var place1 = {lat: 41.7608928, lng: -0.7991762999999992};
+      var map1 = new google.maps.Map(document.getElementById('map1'), {
+        zoom: 8,
+        streetViewControl: false,
+        gestureHandling: "none",
+        mapTypeControl:false,
+        center: place1
+      });
+      var marker1 = new google.maps.Marker({
+        position: place1,
+        map: map1
+      });
+      var place2 = {lat: 43.6096709, lng: 3.9148817000000236};
+      var map2 = new google.maps.Map(document.getElementById('map2'), {
+        zoom: 8,
+        streetViewControl: false,
+        gestureHandling: "none",
+        mapTypeControl:false,
+        center: place2
+      });
+      var marker2 = new google.maps.Marker({
+        position: place2,
+        map: map2
+      });
+      var place3 = {lat: 41.192695, lng: 14.833719999999971};
+      var map3 = new google.maps.Map(document.getElementById('map3'), {
+        zoom: 8,
+        streetViewControl: false,
+        gestureHandling: "none",
+        mapTypeControl:false,
+        center: place3
+      });
+      var marker3 = new google.maps.Marker({
+        position: place3,
+        map: map3
+      });
+    }
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK4PRnBM2HrYjiHXeziHdKgNqGDqGP65A&callback=initMap"></script>
+
 
 </html>

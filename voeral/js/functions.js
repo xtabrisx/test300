@@ -6,7 +6,7 @@ $(document).ready(function($) {
     var colUno = $(".col1");
     var colDos = $(".col2");
     var colTres = $(".col3");
-
+    
     //CREACIÓN DEL CAROUSEL
     $slideshow = $('.news-carousel').slick({
         slidesToShow: 2,
@@ -89,11 +89,21 @@ $(document).ready(function($) {
     }
     //SCROLL BOTTOM
     $(window).scroll(function() {
-   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        if($(window).scrollTop() + $(window).height() == $(document).height()) {
            $("#voeral-logo").show().animateCss("fadeIn");
-       }else{
+        }else{
             $("#voeral-logo").fadeOut();
-       }
+        }
+
+        if($(window).scrollTop()==0){
+            $(".col1-bg").css("opacity","0");
+            $(".col2-bg").css("opacity","0");
+            $(".col3-bg").css("opacity","0");
+        }else{
+            $(".col1-bg").css("opacity","0.5");
+            $(".col2-bg").css("opacity","0.5");
+            $(".col3-bg").css("opacity","0.5");
+        }
 
     });
     /*COMPORTAMIENTO BURGER*/
@@ -192,5 +202,7 @@ $(document).ready(function($) {
     colDos.click(function() { 
     	block2();
     });
+    
+
 
 });

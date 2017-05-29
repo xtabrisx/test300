@@ -14,7 +14,17 @@
       ".ml-info-hover-3": "",
       ".ml-country-1": "ESPAÑA",
       ".ml-country-2": "FRANCIA",
-      ".ml-country-3": "ITALIA"
+      ".ml-country-3": "ITALIA",
+      ".ml-nw1-title":"",
+      ".ml-nw1-body":"",
+      ".ml-nw2-title":"",
+      ".ml-nw2-body":"",
+      ".ml-nw3-title":"",
+      ".ml-nw3-body":"",
+      ".ml-nw4-title":"",
+      ".ml-nw4-body":"",
+      ".ml-nw5-title":"",
+      ".ml-nw5-body":""
 
     },
     "en": {
@@ -28,7 +38,17 @@
       ".ml-info-hover-3": "",
       ".ml-country-1": "SPAIN",
       ".ml-country-2": "FRANCE",
-      ".ml-country-3": "ITALY"
+      ".ml-country-3": "ITALY",
+      ".ml-nw1-title":"",
+      ".ml-nw1-body":"",
+      ".ml-nw2-title":"",
+      ".ml-nw2-body":"",
+      ".ml-nw3-title":"",
+      ".ml-nw3-body":"",
+      ".ml-nw4-title":"",
+      ".ml-nw4-body":"",
+      ".ml-nw5-title":"",
+      ".ml-nw5-body":""
     },
     "fra": {
       ".ml-company": "société",
@@ -41,7 +61,17 @@
       ".ml-info-hover-3": "",
       ".ml-country-1": "ESPAGNE",
       ".ml-country-2": "FRANCE",
-      ".ml-country-3": "ITALIE"
+      ".ml-country-3": "ITALIE",
+      ".ml-nw1-title":"",
+      ".ml-nw1-body":"",
+      ".ml-nw2-title":"",
+      ".ml-nw2-body":"",
+      ".ml-nw3-title":"",
+      ".ml-nw3-body":"",
+      ".ml-nw4-title":"",
+      ".ml-nw4-body":"",
+      ".ml-nw5-title":"",
+      ".ml-nw5-body":""
     }
   }
 }
