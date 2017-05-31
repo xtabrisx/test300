@@ -1,0 +1,77 @@
+{
+  "config": {
+    "default": "es"
+  },
+  "language": {
+    "es": {
+      ".ml-company": "empresa",
+      ".ml-news": "noticias",
+      ".ml-contact": "contacto",
+      ".ml-titulo-empresa": "VOERAL ofrece un acompañamiento global para el promotor de energía eólica.",
+      ".ml-text-empresa": "VOERAL ofrece un acompañamiento global para el promotor de energía eólica. Especializados en el área de la medición de viento, ofrecemos un desarrollo permanente de productos para dar soluciones adaptadas a cada situación y a cada momento. Experiencia, especialización, conocimiento profundo de las energias y evolución constante, son las bazas que ofrece la empresa consolidada y reconocida en el sector. Desde las sedes de Europa, se ofrece servicio a todo el mundo, con especial presencia en el arco mediterráneo.",
+      ".ml-info-hover-1": "Nace una empresa nueva, basada en toda la experiencia y el saber hacer de empresas que llevan años dando servicio en el sector de las energías renovables desde hace 15 años. Un nuevo nombre, una nueva marca, nuevos productos, nuevos servicios, una empresa más grande, con nuevas ambiciones y proyectos, pero basado en un equipo de personas con de reconocido prestigio y experiencia.<br>Una única motivación nos mueve en esta nueva etapa, hacer que el servicio ofrecido a los clientes sea mejor que nunca.",
+      ".ml-info-hover-2": "",
+      ".ml-info-hover-3": "",
+      ".ml-country-1": "ESPAÑA",
+      ".ml-country-2": "FRANCIA",
+      ".ml-country-3": "ITALIA",
+      ".ml-nw1-title":"",
+      ".ml-nw1-body":"",
+      ".ml-nw2-title":"",
+      ".ml-nw2-body":"",
+      ".ml-nw3-title":"",
+      ".ml-nw3-body":"",
+      ".ml-nw4-title":"",
+      ".ml-nw4-body":"",
+      ".ml-nw5-title":"",
+      ".ml-nw5-body":""
+
+    },
+    "en": {
+      ".ml-company": "company",
+      ".ml-news": "news",
+      ".ml-contact": "contact",
+      ".ml-titulo-empresa": "VOERAL offers a global support for the Wind Farm developer.",
+      ".ml-text-empresa": "VOERAL offers a global support for the Wind Farm developer. Specialized in the area of wind measurement, we offer a permanent development of new products to give adapted solutions for every situation at every moment. Experience, specialization, wide knowledge in renewable energy and permanent evolution, these are the advantages we offer, with a consolidated and recognized company in the sector. From our headquarters in Europe, we offer our services to any country in the world, with special presence in the Mediterranean area.",
+      ".ml-info-hover-1": "A new company has just arrived, with the support and all the experience and know-how of companies working in renewables energies in the past fifteen years. A new name, a new trade mark, new products, new services, a greater company, with new ambitions and projects, formed by team made up with people with proved reputation and experience. <br>One only motivation move us in this new step: to do that the service we offer to our customer are as good as ever.",
+      ".ml-info-hover-2": "",
+      ".ml-info-hover-3": "",
+      ".ml-country-1": "SPAIN",
+      ".ml-country-2": "FRANCE",
+      ".ml-country-3": "ITALY",
+      ".ml-nw1-title":"",
+      ".ml-nw1-body":"",
+      ".ml-nw2-title":"",
+      ".ml-nw2-body":"",
+      ".ml-nw3-title":"",
+      ".ml-nw3-body":"",
+      ".ml-nw4-title":"",
+      ".ml-nw4-body":"",
+      ".ml-nw5-title":"",
+      ".ml-nw5-body":""
+    },
+    "fra": {
+      ".ml-company": "société",
+      ".ml-news": "nouveautes",
+      ".ml-contact": "contact",
+      ".ml-titulo-empresa": "VOERAL offre une assistance globale pour les développeurs de l’éolien.",
+      ".ml-text-empresa": "VOERAL offre une assistance globale pour les développeurs de l’éolien. Spécialisée dans le domaine de la mesure du vent, nous proposons un développement permanent de produits pour donner une solution adaptée à chaque situation et à chaque moment. Expérience, spécialisation, connaissance profonde des énergies renouvelables et des équipements et en évolution permanente, ce sont les atouts qu’offre la société consolidée et reconnue dans le secteur. Depuis nos sièges en Europe, nous offrons nos services au monde entier, avec une présence particulière dans tout l’arc Méditerranéen.",
+      ".ml-info-hover-1": "Une nouvelle société est née, avec les bases de toute l’expérience et le savoir-faire de sociétés travaillant dans le secteur des énergies renouvelables depuis 15 ans. Un nouveau nom, une nouvelle marque, de nouveaux produits, de nouveaux services, une société plus grande, avec de nouvelles ambitions et projets, formée par une équipe de personnes avec réputation et expérience reconnues.<br>Une seule motivation nous dirige dans cette nouvelle étape, faire que le service rendu à nos clients soit mieux que jamais.",
+      ".ml-info-hover-2": "",
+      ".ml-info-hover-3": "",
+      ".ml-country-1": "ESPAGNE",
+      ".ml-country-2": "FRANCE",
+      ".ml-country-3": "ITALIE",
+      ".ml-nw1-title":"",
+      ".ml-nw1-body":"",
+      ".ml-nw2-title":"",
+      ".ml-nw2-body":"",
+      ".ml-nw3-title":"",
+      ".ml-nw3-body":"",
+      ".ml-nw4-title":"",
+      ".ml-nw4-body":"",
+      ".ml-nw5-title":"",
+      ".ml-nw5-body":""
+    }
+  }
+}
