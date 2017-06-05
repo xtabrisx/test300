@@ -11,7 +11,16 @@ $(document).ready(function($) {
     $slideshow = $('.news-carousel').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
-        arrows:true
+        arrows:true,
+        responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    }]
     });
     //CLICAR EN SLIDE PARA PASAR AL SIGUIENTE - DEPRECATED
     /*$('.news-container').click(function() {
@@ -43,6 +52,7 @@ $(document).ready(function($) {
     console.log(winHeight);
     $(".main-screen").height(winHeight);
     $(".col-container").height(winHeight);
+    $(".main-welcome-inner").height(winHeight-200);
 
     //DISPARAR EVENTO SCROLLDOWN EN TODA LA PANTALLA
     $(".main-screen").click(function(){
