@@ -543,3 +543,9 @@ button.slick-next.slick-arrow {
 	background-size: cover;
 	background-position-x: 50%;
  }
+ .y-scroll{
+ 	display: none;
+ }
+ .title-resp{
+ 	display: none;
+ }
