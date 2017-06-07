@@ -1,6 +1,10 @@
 /*RESPONSIVE STYLES*/
 @media (max-width: 1082px) {
-	
+	body{
+		background: url(../img/bg.png);
+		background-size: cover;
+		background-position-x: 50%;
+	}
 	svg{
 		display: none;
 	}
@@ -12,12 +16,13 @@
 		width: 100%;
 		display: block;
 		float: left;
-		height: 33%;
+		height: 33.3%;
 		position: relative;   
 		z-index: 111;
 	}
-	.col-info-hover:hover{
-		display: none;
+	.col-info-hover{
+		color:transparent !important;
+		opacity: 0 !important;
 	}
 	.col-title {
 		transform: rotate(0deg);
@@ -91,6 +96,7 @@
 		text-align:center;
 	}
 	.go-top{
+		display: none;
 	}
 	.col-contact-right {
 		width: 48%;
@@ -119,4 +125,44 @@
 	.col3-bg {
 	    transition: opacity 0.5s cubic-bezier(0.25, 0.1, 0.68, 0.25);
 	}
+	#back-button{
+	 	display: block;
+	 	position: absolute;
+	 	top: 5rem;
+	 	left: 2rem;
+	 	width: 2rem;
+	 	height: 2rem;
+	 	/* opacity: 1; */
+	 	z-index: 111111;
+	 }
+	#back-button .inner-back-button{
+	 	display: none;
+	 	background: url(../img/leftb.png);
+	 	background-repeat: none;
+	 	background-size: cover;
+	 	border-radius: 50%;
+	 	z-index: 999999999999999;
+	 	height: 4rem;
+	 	width: 4rem;
+	 	/* opacity: 1; */
+	 }
+	 .language-menu {
+		position: fixed;
+		top: 0.7rem;
+		right: 5.5rem;
+		z-index: 11111;
 	}
+	.voeral-logo {
+		margin: 1.3rem 1rem 1rem 0rem;
+		
+	}
+	.voeral-logo img{
+		width:80%;		
+	}
+	.burger-menu {
+		padding: 1rem 0.2rem;
+		margin: 1rem;
+		width: 2rem;
+	}
+
+}

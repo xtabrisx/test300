@@ -535,3 +535,11 @@ button.slick-next.slick-arrow {
   height: 100%;
   width: 100%;
  }
+ #back-button{
+ 	display: none;
+ }
+ body.background2{
+ 	background: url(../img/bg.png);
+	background-size: cover;
+	background-position-x: 50%;
+ }
