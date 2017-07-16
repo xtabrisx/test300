@@ -19,11 +19,20 @@ $(document).ready(function($) {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true
+      },
+      breakpoint: 1083,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true
       }
     }]
     });
 
-
+    //MAIN SCREEN MOBILE
+    $('.main-screen-responsive').click(function() {
+        $(this).fadeOut('slow');
+    });
     //DETECT SAFARI
     if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) 
     {
@@ -31,7 +40,6 @@ $(document).ready(function($) {
        $("body").addClass('background2');
 
     }
-
     //CLICAR EN SLIDE PARA PASAR AL SIGUIENTE - DEPRECATED
     /*$('.news-container').click(function() {
     $slideshow.slick('slickGoTo', parseInt($slideshow.slick('slickCurrentSlide'))+1);
@@ -59,10 +67,60 @@ $(document).ready(function($) {
     });
     /*CÁLCULO DE ALTURAS*/
     var winHeight = $(window).height();
+    /*CÁLCULO ANCHURA*/
+    var winWidth = $(window).width();
+
     console.log(winHeight);
-    $(".main-screen").height(winHeight);
-    $(".col-container").height(winHeight);
-    $(".main-welcome-inner").height(winHeight-200);
+    function heightCalc(){
+        $(".main-screen").height(winHeight);
+        if(winWidth < 1083){
+            $(".col-container").height(winHeight+60);
+            $(".main-welcome-inner").height(winHeight-100);
+            //alert("menor");
+        }else{
+            $(".col-container").height(winHeight);
+            $(".main-welcome-inner").height(winHeight-200);
+            //alert("mayor");
+        }
+        
+    }
+    heightCalc();
+    
+    console.log(winWidth);
+    function widthCalc(){
+        if(winWidth < 1083){
+            $('link[rel=stylesheet][href~="css/animate.css"]').remove();
+            $('.carousel-contact').slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows:true,
+                responsive: [
+                {
+                  breakpoint: 1400,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false
+                  },
+                  breakpoint: 1083,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    infinite: false
+                  }
+                }]
+                });
+        }
+    }
+    widthCalc();
+    /*CÁLCULOS EN RESIZE*/
+    $( window ).resize(function() {
+      winWidth = $(window).width();
+      winHeight = $(window).height();
+      heightCalc();
+
+    });
 
     //DISPARAR EVENTO SCROLLDOWN EN TODA LA PANTALLA
     $(".main-screen").click(function(){
@@ -102,7 +160,7 @@ $(document).ready(function($) {
             if($(".block-3").hasClass('active')){
                 block3();
             }
-
+            $('.inner-back-button').hide();
             $('.burger-menu').animateCss("flipInY");
             $('.burger-menu').toggleClass('active');
             $('.modal-menu').toggleClass('active');            

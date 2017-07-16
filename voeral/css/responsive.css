@@ -1,15 +1,25 @@
 /*RESPONSIVE STYLES*/
-@media (max-width: 1082px) {
+@media (max-width: 1082px) and (orientation: portrait) {
 	body{
-		background: url(../img/bg.png);
+		background: url(../img/bkcpnzrl.png);
+		background-position-x: 46%;
 		background-size: cover;
-		background-position-x: 50%;
+		background-repeat: no-repeat;
+	}
+	body.background2{
+		background: url(../img/bkcpnzrl.png);
+		background-position-x: 46%;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.orientation-warning{
+		display: none;
 	}
 	svg{
 		display: none;
 	}
 	.main-welcome{
-		padding: 7rem 0rem;
+		padding: 3.2rem 0 0 0;
 	}
 
 	.col-gen {
@@ -48,12 +58,21 @@
 		width:100%;
 		text-align:left;
 	}
+	.block-1{
+		width: 100%;
+		float: right;
+		background: #fff;
+		height: 100%;
+		opacity: 0;
+		transition: opacity 0.2s ease;
+	}
 	.block-1.active {
 		width: 100%;
 		float: right;
 		background: #fff;
 		height: 100%;
 		position: relative;
+		opacity: 1;
 	}
 	.col-gen.minus {
 		display:none;
@@ -62,6 +81,8 @@
 		width:100%;
 		position: absolute;
 		top:0;
+		opacity: 0;
+		transition: opacity 0.2s ease;
 	}
 	.block-2.active {
 		width: 100%;
@@ -69,19 +90,21 @@
 		background: #fff;
 		height: 100%;
 		position: relative;
+		opacity: 1;
 	}
 	.news-image img {
 		position: relative;
 		left: 0;
 		top: 0;
 		height: auto;
-		width: 100%;
+		height: 100%;
+		margin:auto;
 		-webkit-transform: translate(0);
 		-ms-transform: translate(0);
 		transform: translate(0);
 	}
 	.news-image {
-		height: auto;
+		height: 35%;
 	}
 	.block-3{
 		padding-top:7rem;
@@ -89,6 +112,8 @@
 		width:100%;
 		position: absolute;
 		top:0;
+		opacity: 0;
+		transition: opacity 0.2s ease;
 	}
 	.block-3.active {
 		width: 100%;
@@ -98,10 +123,11 @@
 		position: relative;
 		overflow:auto;
 		margin-bottom: 10rem;
-		padding-top: 7rem;
+		padding-top: 4rem;
+		opacity: 1;
 	}
 	.row-contact{
-		height: 24%;
+		height: 100%;
 		width: 100%;
 		margin: 0%;
 		margin-top: 0%;
@@ -114,35 +140,38 @@
 		display: none;
 	}
 	.col-contact-right {
-		width: 48%;
-		display: inline-block;
+		width: 80%;
+		/* display: inline-block; */
 		vertical-align: top;
-		padding-left: 2%;		
+		padding-left: 0;
 		filter: grayscale(100%);
-		height: 90%;
-		padding-top: 2%;
+		height: 33%;
+		padding-top: 0;
 	}
 	.address-container{
 		font-size: 0.7rem;
-		padding: 0.2rem 0.2rem;
-		text-align:left;
-		line-height: 0.8rem;
+		padding: 0.4rem 0.2rem;
+		text-align: center;
+		line-height: 1rem;
 	}
 	.col1-bg {
 	    transition: opacity 0.5s cubic-bezier(0.25, 0.1, 0.68, 0.25);
+	    opacity:0.5 !important;
 	}
 
 	.col2-bg {
 	    transition: opacity 0.5s cubic-bezier(0.25, 0.1, 0.68, 0.25);
+	    opacity:0.5 !important;
 	}
 
 	.col3-bg {
 	    transition: opacity 0.5s cubic-bezier(0.25, 0.1, 0.68, 0.25);
+	    opacity:0.5 !important;
 	}
 	#back-button{
 	 	display: block;
 	 	position: absolute;
-	 	top: 5rem;
+	 	top: 2.5rem;
 	 	left: 1rem;
 	 	width: 2rem;
 	 	height: 2rem;
@@ -156,27 +185,38 @@
 	 	background-size: cover;
 	 	border-radius: 50%;
 	 	z-index: 999999999999999;
-	 	height: 2rem;
-	 	width: 2rem;
+	 	height: 1.5rem;
+	 	width: 1.5rem;
 	 	/* opacity: 1; */
 	 }
 	 .language-menu {
 		position: fixed;
-		top: 0.7rem;
+		top: 0;
 		right: 5.5rem;
 		z-index: 11111;
+		/* height: 1rem; */
+	}
+	.language-menu ul{
+		height: auto;
+		padding:0;
+		margin: 0.3rem;
+	}
+	.language-menu li{
+		font-size:0.8rem;
 	}
 	.voeral-logo {
-		margin: 1.3rem 1rem 1rem 0rem;
-		
+		margin: 0.3rem 1rem 1rem 0rem;
+		width: 23%;
+		padding: 0.5rem 1rem;		
+    	display: block !important;
 	}
 	.voeral-logo img{
 		width:80%;		
 	}
 	.burger-menu {
-		padding: 1rem 0.2rem;
-		margin: 1rem;
-		width: 2rem;
+		padding: 0;
+		margin: 0.6rem;
+		width: 1.6rem;
 	}
 	.main-logo img{
 		width:50%;
@@ -196,6 +236,7 @@
 		padding:0 2rem;
 		text-align:center;
 		width: 80%;
+		margin: auto;
 	}
 	 .block-2 .y-scroll{
 	 	display: block;
@@ -210,24 +251,243 @@
 	 .title-resp{
 	 	display: block;
 	 	width: 100%;
-	 	font-size: 1.8rem;
+	 	font-size: 1.5rem;
 	 	text-align: center;
 	 	font-family: 'Source Sans Pro', sans-serif;
 	 	font-weight: 300;
 	 	position: absolute;
-	 	top: 5rem;
+	 	top: 2.2rem;
 	 }
 	 .country-header{
-	 	font-size:1.3rem;
-	 	height: 18%;
+	 	font-size: 1.3rem;
+	 	height: 15%;
+	 	padding-bottom: 0.3rem;
+	 	margin-bottom:2px;
+	 	text-align: -webkit-center;
 	 }
 	 .news-title {
 	    font-size: 0.6rem;
 	}
 	.news-text {
-	    max-height: 22%;
+	    max-height: 33%;
+	    /* border-bottom:1px solid #ccc; */
+	    font-size:0.8rem;
 	}
 	.menu-sections ul li {
 	    font-size: 3rem;
 	}
+	ul.slick-dots {
+		position: absolute;
+		/* bottom: 0; */
+		width:100%;
+		left:0;
+		right:0;
+		text-align:center;
+		/* display: inline-block; */
+		bottom:0;
+		padding: 0;
+	}
+	ul.slick-dots li{
+		/* position: absolute; */
+		/* bottom: 0; */
+		display: inline-block;
+		margin: 3px;
+		/* width: 3px; */
+	}
+	ul.slick-dots li button{
+		width: 0.5rem;
+		border-radius:50%;
+		height:0.5rem;
+		color: transparent;
+		box-shadow:none;
+		border:none;
+		font-size:1px;
+		line-height: 1px;
+		padding: 0;
+		background:#ccc;
+	}
+	ul.slick-dots li.slick-active button{
+		background:#828282;
+	}
+	.news-carousel{
+		padding-bottom:1rem;
+		padding-top: 2.5rem;
+	}
+	.news-date{
+		font-size:0.7rem;
+	}
+	.modal-menu{
+		height:100%;
+		margin:0;
+		width:100%;
+	}
+	.news-container{
+		padding: 2rem 1rem;
+	}
+	.main-screen{
+		display: none;
+	}
+	#col-section{
+		height:100% !important;
+	}
+	/*PRESENTACIÓN RESPONSIVE*/
+	.main-screen-responsive{
+	 	display: block;
+	 	position: absolute;
+	 	z-index: 11111111111111;
+	 	background: url(../img/bkcpnzrl.png);
+		background-position-x: 46%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	 }
+	 .tap{
+	 	width: 100%;
+	 	text-align: center;
+	 	bottom: 2rem;
+	 	position: absolute;
+	 }
+	 .tap img{
+	 	margin: auto;
+	 	width:2.5rem;
+	 }
+	 .col-contact-left {
+		    width: 80%;
+		    /* display: inline-block; */
+		    padding-bottom: 0.2rem;
+		    height: 30%;
+		    position: relative;
+		    margin: auto;
+		}
+		.block-3 ul.slick-dots {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			left: 0;
+			right: 0;
+			text-align: center;
+			/* display: inline-block; */
+			bottom: 10%;
+			padding: 0;
+		}
+		/*CAROUSEL CONTACTO*/
+		.block-3 button.slick-prev.slick-arrow {
+			position: absolute;
+			left: 0;
+			top:0;
+			height: 30%;
+			border: none;
+			background: transparent;
+			color: transparent;
+			z-index: 111;
+			width: 20%;
+		}
+		.block-3 button.slick-next.slick-arrow {
+			position: absolute;
+			right: 0;
+			top:0;
+			height: 30%;
+			border: none;
+			background: transparent;
+			color: transparent;
+			z-index: 111;
+			width: 20%;
+		}
+		.social-menu{
+			display: none;
+		}
+		.work{
+			display:none;
+		}
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+	*{
+		background: #000 !important;
+		color: #000 !important;
+	}
+	.main-screen-responsive img{
+		display: none;
+	}
+	.main-screen img{
+		display: none;
+	}
+  .orientation-warning {
+	    display: block ;
+	    background: #000;
+	    position: fixed;
+	    top:-0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    z-index: 111111111111111;
+	    text-align: -webkit-center;
+	    height: 100vh;
+    	width: 100%;
+	 }
+	  .orientation-warning img.logo-rsp{
+	    margin:auto;
+	    width:10rem;
+	    margin-top:5rem;
+	 }
+	 .orientation-warning img.rotate{
+	    margin:auto;
+	    width:5rem;
+	    margin-top:2rem;
+	    transform: rotate(-90deg) ;
+		-webkit-transform: rotate(-90deg) ;
+		-moz-transform: rotate(-90deg) ;
+		-o-transform: rotate(-90deg) ;
+		-ms-transform: rotate(-90deg) ;
+	 }
+	.slick-slider{
+		display:none;
+	}
+}
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+	*{
+		background: #000 !important;
+		color: #000 !important;
+	}
+	.main-screen-responsive img{
+		display: none;
+	}
+	.main-screen img{
+		display: none;
+	}
+  .orientation-warning {
+	    display: block ;
+	    background: #000;
+	    position: fixed;
+	    top:-0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    z-index: 111111111111111;
+	    text-align: -webkit-center;
+	    height: 100vh;
+    	width: 100%;
+	 }
+	  .orientation-warning img.logo-rsp{
+	    margin:auto;
+	    width:10rem;
+	    margin-top:5rem;
+	 }
+	 .orientation-warning img.rotate{
+	    margin:auto;
+	    width:5rem;
+	    margin-top:2rem;
+	    transform: rotate(-90deg) ;
+		-webkit-transform: rotate(-90deg) ;
+		-moz-transform: rotate(-90deg) ;
+		-o-transform: rotate(-90deg) ;
+		-ms-transform: rotate(-90deg) ;
+	 }
+	 .slick-slider{
+		display:none;
+	}
+
 }
