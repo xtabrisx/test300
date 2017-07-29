@@ -85,6 +85,7 @@ svg {
 	z-index: 11111;
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
+	cursor: pointer;
 }
 .btn-es, .btn-en, .btn-fr{	
 	font-family: 'Source Sans Pro', sans-serif;
@@ -596,31 +597,31 @@ button.slick-next.slick-arrow {
 	margin: 0 0.1rem;
 }
 .social-mail {
-	background: url(../img/mail.png) #000;
+	background: url(../img/mail2.png);
 	border-radius: 50%;
 	width: 2rem;
 	height: 2rem;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 60%;
+	background-size: 100%;
 }
 .social-linkedin {
-	background: url(../img/lk.png) #000;
+	background: url(../img/lk2.png);
 	border-radius: 50%;
 	width: 2rem;
 	height: 2rem;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 60%;
+	background-size: 100%;
 }
 .social-fb {
-	background: url(../img/fb.png) #000;
+	background: url(../img/fb2.png);
 	border-radius: 50%;
 	width: 2rem;
 	height: 2rem;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 60%;
+	background-size: 100%;
 }
 .social-menu ul{
 	padding: 0;
@@ -632,13 +633,14 @@ button.slick-next.slick-arrow {
 .legal-cookies {
     position: absolute;
     bottom: 1rem;
+    cursor: pointer;
+    /* padding: 2rem; */
 }
 .legal-cookies span{
     color:#000;
     font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1rem;
-	padding: 0 1rem;
-
+    font-size: 1rem;
+    padding: 1rem 2rem;
 }
 .modal-legal{
 	position:fixed;
@@ -657,4 +659,73 @@ button.slick-next.slick-arrow {
 	opacity: 1;
 	z-index: 1111;
 	transition: opacity 1s;
+}
+.cookies-content{
+	height: 75%;
+	/* border:1px solid black; */
+	margin: 5%;
+	overflow: auto;
+	padding: 1rem;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.cookies-content-inner{
+	height:200px;
+}
+.back-legal{
+	background: url(../img/leftb.png);
+	height: 3rem;
+	width: 3rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 65%;
+	margin: 2rem;
+	position: absolute;
+	cursor: pointer;
+}
+.modal-work{
+	position:fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	opacity: 0;
+	background: #fff;
+	transition: opacity 1s;
+	z-index: -1;
+	overflow: hidden;
+}
+.modal-work.active{
+	opacity: 1;
+	z-index: 1111;
+	transition: opacity 1s;
+}
+.back-work{
+	background: url(../img/leftb.png);
+	height: 3rem;
+	width: 3rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 65%;
+	margin: 2rem;
+	position: absolute;
+	cursor: pointer;
+}
+.work-content{
+	width: 100%;
+	padding-top: 7rem;
+	/* height: 100%; */
+}
+.work-left{
+	width: 49%;
+	padding: 1rem;
+	background: #ddd;
+	height: 1000px;
+}
+.work-right{
+	width: 49%;
+	padding: 1rem;
+	background:#ccc;
+	height: 1000px;
 }

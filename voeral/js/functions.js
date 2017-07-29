@@ -188,6 +188,12 @@ $(document).ready(function($) {
     $('.burger-menu').click(function(){burgerFunc();});
 
 
+
+    /*Comportamiento work with us*/
+    $('.work-handler').click(function(e){
+        e.preventDefault();
+        $(".modal-work").toggleClass('active');
+    });
     /*COMPORTAMIENTO BACK-BUTTON RESPONSIVE*/ 
     function backButton(){
         if($(".block-1").hasClass('active')){
